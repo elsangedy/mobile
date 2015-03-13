@@ -1,13 +1,11 @@
 # Mobile Modular Aplication Boilerplate
-Save Angular JS [$http](https://docs.angularjs.org/api/ng/service/$http) requests when you are offline, and execute when you are online
-
 
 ## Installation Guide
 
 Enter the following commands in the terminal
 
 ```bash
-$ git clone https://github.com/munir7/mobile-boilerplate.git
+$ git clone https://github.com/munir7/mobile.git
 $ cd mobile-boilerplate
 $ npm install
 $ gulp
