@@ -3,6 +3,7 @@ define(function(require) {
 
   var angular = require('angular');
 
+  require('angularTouch');
   require('uiRouter');
   require('lumx');
 
@@ -14,6 +15,7 @@ define(function(require) {
 
     // module dependencies
     [
+      'ngTouch',
       'ui.router',
       'lumx',
 
@@ -22,7 +24,8 @@ define(function(require) {
       require('app/stores/package').name,
       require('app/history/package').name,
       require('app/gamification/package').name,
-      require('app/settings/package').name
+      require('app/settings/package').name,
+      require('app/teste/package').name
     ]
   );
 

@@ -10,13 +10,15 @@ var reload = browserSync.reload;
 var files = [
   './src/*.js',
   './src/app/**/*.js',
-  './src/app/**/**/*.js'
+  './src/app/**/**/*.js',
+  './src/app/**/**/**/*.js'
 ];
 
 var vendor_files = {
   js: [
     './bower_components/jquery/dist/jquery.min.js',
     './bower_components/angular/angular.min.js',
+    './bower_components/angular-touch/angular-touch.min.js',
     './bower_components/angular-resource/angular-resource.min.js',
     './bower_components/angular-ui-router/release/angular-ui-router.min.js',
     './bower_components/moment/min/moment.min.js',
@@ -67,9 +69,15 @@ gulp.task('dev', ['build'], function () {
       server: './dist'
   });
 
+  gulp.watch('./src/*', ['dist']);
+  gulp.watch('./src/**/*', ['dist']);
+  gulp.watch('./src/**/**/*', ['dist']);
+  gulp.watch('./src/**/**/**/*', ['dist']);
+
   gulp.watch('./src/*').on('change', reload);
   gulp.watch('./src/**/*').on('change', reload);
   gulp.watch('./src/**/**/*').on('change', reload);
+  gulp.watch('./src/**/**/**/*').on('change', reload);
 })
 
 gulp.task('build', ['lint', 'vendor', 'dist'], function () {

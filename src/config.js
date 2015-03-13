@@ -7,6 +7,10 @@ require({
       './vendor/angular.min'
     ],
 
+    angularTouch: [
+      './vendor/angular-touch.min'
+    ],
+
     angularResource: [
       './vendor/angular-resource.min'
     ],
@@ -34,6 +38,10 @@ require({
 
     'angular': {
       exports: 'angular'
+    },
+
+    'angularTouch': {
+      deps: ['angular']
     },
 
     'angularResource': {
