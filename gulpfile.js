@@ -73,11 +73,13 @@ gulp.task('dev', ['build'], function () {
   gulp.watch('./src/**/*', ['dist']);
   gulp.watch('./src/**/**/*', ['dist']);
   gulp.watch('./src/**/**/**/*', ['dist']);
+  gulp.watch('./src/**/**/**/**/*', ['dist']);
 
   gulp.watch('./src/*').on('change', reload);
   gulp.watch('./src/**/*').on('change', reload);
   gulp.watch('./src/**/**/*').on('change', reload);
   gulp.watch('./src/**/**/**/*').on('change', reload);
+  gulp.watch('./src/**/**/**/**/*').on('change', reload);
 })
 
 gulp.task('build', ['lint', 'vendor', 'dist'], function () {

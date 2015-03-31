@@ -25,7 +25,8 @@ define(function(require) {
       require('app/history/package').name,
       require('app/gamification/package').name,
       require('app/settings/package').name,
-      require('app/teste/package').name
+      require('app/teste/package').name,
+      require('app/subheader/package').name
     ]
   );
 

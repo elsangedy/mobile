@@ -123,3 +123,47 @@
   top: 44px;
   height: 4px;
 }
+
+
+
+
+
+subheaders {
+  position: relative;
+  overflow: hidden;
+  min-height: 448px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subheader-container {
+  display: block;
+  position: relative;
+  overflow: auto;
+  height: 300px;
+  width: 100%;
+}
+
+.subheader-title {
+  font-size: 14px;
+  background-color: #ccc;
+  width: 100%;
+  padding: 7px 10px;
+}
+.subheader-title-header {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute !important;
+  width: 95%;
+  transform: translate3d(-9999px, -9999px, 0);
+}
+.subheader-title-header.active {
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0px 2px 13px -6px #000;
+}
