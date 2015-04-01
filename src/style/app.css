@@ -131,21 +131,12 @@
 subheaders {
   position: relative;
   overflow: hidden;
-  min-height: 448px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
+  padding-top: 1px;
+  display: block;
 }
 
 .subheader-container {
-  display: block;
-  position: relative;
-  overflow: auto;
-  height: 300px;
-  width: 100%;
+  max-height:200px
 }
 
 .subheader-title {
@@ -160,7 +151,7 @@ subheaders {
   left: 0;
   right: 0;
   position: absolute !important;
-  width: 95%;
+  width: 100%;
   transform: translate3d(-9999px, -9999px, 0);
 }
 .subheader-title-header.active {

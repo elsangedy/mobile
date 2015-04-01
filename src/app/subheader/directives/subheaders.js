@@ -81,10 +81,6 @@ define(function(require) {
 
     function onScroll(e) {
       angular.forEach(_subheaders, function(val, key) {
-        if(val.content.offsetTop === 0) {
-          val.content.addClass('active');
-        }
-
         if(!val.content.hasClass('active') && val.content.offset().top < 52) {
           active.header.css({
             '-webkit-transform': 'translate3d(0px, '+(val.content.offset().top - 50)+'px, 0px)'
